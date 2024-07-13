@@ -61,7 +61,7 @@ nav li button {
     cursor: pointer;
 }
 
-nav li button:hover{
+nav li button:hover {
     font-size: 22px;
     transition: 0.4s;
 }
@@ -130,7 +130,7 @@ header {
 }
 
 .hero .btn1:hover {
-    font-size: 22px;
+    font-size: 20px;
     transition: 0.4s;
 }
 
@@ -402,7 +402,7 @@ footer {
 
 }
 
-.footer-column form #submit:hover{
+.footer-column form #submit:hover {
     font-size: 22px;
     transition: 0.4s;
 }
@@ -412,4 +412,125 @@ footer {
     font-size: 30px;
     margin: 12px;
     cursor: pointer;
+}
+
+/* responsive */
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    header {
+        background-image: none;
+        background-color: white;
+    }
+
+    nav {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    nav h2 {
+        margin: 0 auto;
+    }
+
+    .hero {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .hero .img img {
+        width: 100%;
+    }
+
+    .hero .title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 105px;
+    }
+
+    .hero .title h3 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    .hero .title h1 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .hero .btn1 {
+        margin-right: 0;
+        font-size: 16px;
+        width: 160px;
+        height: 55px;
+    }
+
+    .hero .title .btn2 {
+        margin-bottom: 30px;
+        font-size: 16px;
+        width: 160px;
+        height: 55px;
+    }
+
+    .about {
+        padding: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 140px;
+        margin-bottom: 140px;
+    }
+
+    .items {
+        flex-direction: column;
+    }
+
+    .skill-container {
+        flex-direction: column;
+        margin: 0 20px;
+        
+    }
+
+    .skills .skill-container{
+        margin-bottom: 140px;
+    }
+
+    .resume-container {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .footer-column form #name,
+    #email {
+        width: 300px;
+    }
+
+    .footer-column form #massage {
+        padding: 18px 130px 134px 30px;
+    }
+
+
 }
